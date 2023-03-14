@@ -17,7 +17,7 @@ const Skills = () => {
                     <div className='p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-200'>
                         <div className='grid grid-cols-2 gap-4 justify-center items-center'>
                             <div className='m-auto'>
-                            <Image src='/public/assets/skill-icons/html.png' width='64' height='64' alt='/' />
+                            <Image src='/assets/skill-icons/html.png' width='64' height='64' alt='/' />
                             </div>
                             <div className='flex flex-col items-center justify-center'>
                                 <h3>HTML</h3>
@@ -28,7 +28,7 @@ const Skills = () => {
                     <div className='p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-200'>
                         <div className='grid grid-cols-2 gap-4 justify-center items-center'>
                             <div className='m-auto'>
-                            <Image src='/public/assets/skill-icons/css.png' width='64' height='64' alt='/' />
+                            <Image src='/assets/skill-icons/css.png' width='64' height='64' alt='/' />
                             </div>
                             <div className='flex flex-col items-center justify-center'>
                                 <h3>CSS</h3>
@@ -39,7 +39,7 @@ const Skills = () => {
                     <div className='p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-200'>
                         <div className='grid grid-cols-2 gap-4 justify-center items-center'>
                             <div className='m-auto'>
-                            <Image src='//public/assets/skill-icons/javascript.png' width='64' height='64' alt='/' />
+                            <Image src='/assets/skill-icons/javascript.png' width='64' height='64' alt='/' />
                             </div>
                             <div className='flex flex-col items-center justify-center'>
                                 <h3>JavaScript</h3>
@@ -50,7 +50,7 @@ const Skills = () => {
                     <div className='p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-200'>
                         <div className='grid grid-cols-2 gap-4 justify-center items-center'>
                             <div className='m-auto'>
-                            <Image src='//public/assets/skill-icons/react.png' width='64' height='64' alt='/' />
+                            <Image src='/assets/skill-icons/react.png' width='64' height='64' alt='/' />
                             </div>
                             <div className='flex flex-col items-center justify-center'>
                                 <h3>React</h3>
@@ -61,7 +61,7 @@ const Skills = () => {
                     <div className='p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-200'>
                         <div className='grid grid-cols-2 gap-4 justify-center items-center'>
                             <div className='m-auto'>
-                            <Image src='/public/assets/skill-icons/tailwind.png' width='64' height='64' alt='/' />
+                            <Image src='/assets/skill-icons/tailwind.png' width='64' height='64' alt='/' />
                             </div>
                             <div className='flex flex-col items-center justify-center'>
                                 <h3>Tailwind</h3>
@@ -72,7 +72,7 @@ const Skills = () => {
                     <div className='p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-200'>
                         <div className='grid grid-cols-2 gap-4 justify-center items-center'>
                             <div className='m-auto'>
-                            <Image src='/public/assets/skill-icons/firebase.png' width='64' height='64' alt='/' />
+                            <Image src='/assets/skill-icons/firebase.png' width='64' height='64' alt='/' />
                             </div>
                             <div className='flex flex-col items-center justify-center'>
                                 <h3>Firebase</h3>
@@ -105,7 +105,7 @@ const Skills = () => {
                     <div className='p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-200'>
                         <div className='grid grid-cols-2 gap-4 justify-center items-center'>
                             <div className='m-auto'>
-                            <Image src='/public/assets/skill-icons/c.png' width='64' height='64' alt='/' />
+                            <Image src='/assets/skill-icons/c.png' width='64' height='64' alt='/' />
                             </div>
                             <div className='flex flex-col items-center justify-center'>
                                 <h3>C</h3>
@@ -116,7 +116,7 @@ const Skills = () => {
                     <div className='p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-200'>
                         <div className='grid grid-cols-2 gap-4 justify-center items-center'>
                             <div className='m-auto'>
-                            <Image src='/public/assets/skill-icons/cpp.png' width='64' height='64' alt='/' />
+                            <Image src='/assets/skill-icons/cpp.png' width='64' height='64' alt='/' />
                             </div>
                             <div className='flex flex-col items-center justify-center'>
                                 <h3>C++</h3>
@@ -127,7 +127,7 @@ const Skills = () => {
                     <div className='p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-200'>
                         <div className='grid grid-cols-2 gap-4 justify-center items-center'>
                             <div className='m-auto'>
-                            <Image src='/public/assets/skill-icons/python.png' width='64' height='64' alt='/' />
+                            <Image src='/assets/skill-icons/python.png' width='64' height='64' alt='/' />
                             </div>
                             <div className='flex flex-col items-center justify-center'>
                                 <h3>Python</h3>
@@ -138,7 +138,7 @@ const Skills = () => {
                     <div className='p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-200'>
                         <div className='grid grid-cols-2 gap-4 justify-center items-center'>
                             <div className='m-auto'>
-                            <Image src='/public/assets/skill-icons/git.png' width='64' height='64' alt='/' />
+                            <Image src='/assets/skill-icons/git.png' width='64' height='64' alt='/' />
                             </div>
                             <div className='flex flex-col items-center justify-center'>
                                 <h3>Git</h3>

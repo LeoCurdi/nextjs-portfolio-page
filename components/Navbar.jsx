@@ -16,7 +16,7 @@ const Navbar = () => {
     return (
         <div className='fixed w-full h-20 shadow-xl z-[100]'> {/* the brackets lets you choose your own value instead of being confined to tailwind's pre set intervals */}
             <div className='flex justify-between items-center w-full h-full px-2 2xl:px-16 bg-[#ecf0f3]'>
-                <Image src="/public/assets/logo.png" alt="/" width='125' height='50' /> {/* lazy loading image */}
+                <Image src="/assets/logo.png" alt="/" width='125' height='50' /> {/* lazy loading image */}
                 <div>
                     <ul className='hidden md:flex'> {/* tailwind is mobile first, so this is saying: hide nav items on mobile, and display them as flex on anything above medium screen size */}
                         <Link href='/'>
@@ -45,7 +45,7 @@ const Navbar = () => {
                                     : 'fixed left-[-100%] top-0 p-10 ease-in duration-[300ms]'}>
                     <div>
                         <div className='flex w-full items-center justify-between'>
-                            <Image src='/public/assets/logo.png' width='87' height='35' alt='/' />
+                            <Image src='/assets/logo.png' width='87' height='35' alt='/' />
                             <div onClick={handleNav} className='rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer'>
                                 <AiOutlineClose size={25} />
                             </div>
