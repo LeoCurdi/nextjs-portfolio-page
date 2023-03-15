@@ -69,37 +69,37 @@ const Navbar = () => {
                 <div>
                     <ul style={{color: `${linkColor}`}} className='hidden md:flex'> {/* tailwind is mobile first, so this is saying: hide nav items on mobile, and display them as flex on anything above medium screen size */}
                         <Link href='/'>
-                            <div className='px-5 2xl:px-6 py-2 hover:shadow-xl hover:shadow-gray-400 hover:rounded-xl hover:uppercase hover:bg-gradient-to-r hover:from-[#5651e5] hover:to-[#709dff] hover:text-white'>
+                            <div className='px-5 2xl:px-6 py-2  hover:rounded-xl hover:uppercase hover:bg-gradient-to-r hover:from-[#5651e5] hover:to-[#709dff] hover:text-white'>
                                 <li className='text-sm uppercase'>Home</li>
                             </div>
                             {/* <li className='ml-10 text-sm uppercase hover:border-b hover:mt-[-.05rem]'>Home</li> */}
                         </Link>
                         <Link href='/#about'>
-                            <div className='px-5 2xl:px-6 py-2 hover:shadow-xl hover:shadow-gray-400 hover:rounded-xl hover:uppercase hover:bg-gradient-to-r hover:from-[#5651e5] hover:to-[#709dff] hover:text-white'>
+                            <div className='px-5 2xl:px-6 py-2   hover:rounded-xl hover:uppercase hover:bg-gradient-to-r hover:from-[#5651e5] hover:to-[#709dff] hover:text-white'>
                                 <li className='text-sm uppercase'>About</li>
                             </div>
                             {/* <li className='ml-10 text-sm uppercase hover:border-b hover:mt-[-.05rem]'>About</li> */}
                         </Link>
                         <Link href='/#skills'>
-                            <div className='px-5 2xl:px-6 py-2 hover:shadow-xl hover:shadow-gray-400 hover:rounded-xl hover:uppercase hover:bg-gradient-to-r hover:from-[#5651e5] hover:to-[#709dff] hover:text-white'>
+                            <div className='px-5 2xl:px-6 py-2  hover:rounded-xl hover:uppercase hover:bg-gradient-to-r hover:from-[#5651e5] hover:to-[#709dff] hover:text-white'>
                                 <li className='text-sm uppercase'>Skills</li>
                             </div>
                             {/* <li className='ml-10 text-sm uppercase hover:border-b hover:mt-[-.05rem]'>Skills</li> */}
                         </Link>
                         <Link href='/#projects'>
-                            <div className='px-5 2xl:px-6 py-2 hover:shadow-xl hover:shadow-gray-400 hover:rounded-xl hover:uppercase hover:bg-gradient-to-r hover:from-[#5651e5] hover:to-[#709dff] hover:text-white'>
+                            <div className='px-5 2xl:px-6 py-2  hover:rounded-xl hover:uppercase hover:bg-gradient-to-r hover:from-[#5651e5] hover:to-[#709dff] hover:text-white'>
                                 <li className='text-sm uppercase'>Projects</li>
                             </div>
                             {/* <li className='ml-10 text-sm uppercase hover:border-b hover:mt-[-.05rem]'>Projects</li> */}
                         </Link>
                         <Link href='/assets/Resume.pdf'>
-                            <div className='px-5 2xl:px-6 py-2 hover:shadow-xl hover:shadow-gray-400 hover:rounded-xl hover:uppercase hover:bg-gradient-to-r hover:from-[#5651e5] hover:to-[#709dff] hover:text-white'>
+                            <div className='px-5 2xl:px-6 py-2   hover:rounded-xl hover:uppercase hover:bg-gradient-to-r hover:from-[#5651e5] hover:to-[#709dff] hover:text-white'>
                                 <li className='text-sm uppercase'>Resume</li>
                             </div>
                             {/* <li className='ml-10 text-sm uppercase hover:border-b hover:mt-[-.05rem]'>Projects</li> */}
                         </Link>
                         <Link href='/#contact'>
-                            <div className='px-5 2xl:px-6 py-2 hover:shadow-xl hover:shadow-gray-400 hover:rounded-xl hover:uppercase hover:bg-gradient-to-r hover:from-[#5651e5] hover:to-[#709dff] hover:text-white'>
+                            <div className='px-5 2xl:px-6 py-2  hover:rounded-xl hover:uppercase hover:bg-gradient-to-r hover:from-[#5651e5] hover:to-[#709dff] hover:text-white'>
                                 <li className='text-sm uppercase'>Contact</li>
                             </div>
                             {/* <li className='ml-10 text-sm uppercase hover:border-b hover:mt-[-.05rem]'>Contact</li> */}
