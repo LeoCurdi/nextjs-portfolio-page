@@ -9,20 +9,38 @@ import {useRouter} from 'next/router'
 
 const Navbar = () => {
     const [nav, setNav] = useState(false)
-/*     const [shadow, setShadow] = useState(false) */
+    const [shadow, setShadow] = useState(false)
 
     // give the navbar a background when not on projects page 
     const [navBg, setNavBg] = useState('#ecf0f3') 
     const [linkColor, setLinkColor] = useState('#1f2937')
+    const [hamburgerIconColor, setHamburgerIconColor] = useState('#1f2937')
     const router = useRouter()
     useEffect(() => {
         if (!(router.asPath === '/' || router.asPath === '/#about' || router.asPath === '/#skills' || router.asPath === '/#projects' || router.asPath === '/#contact'))/* (router.asPath === '/sortingVisualizer' || router.asPath === '/cosmicClash' || router.asPath === '/matrix' || router.asPath === '/nasa' || router.asPath === '/physics' || router.asPath === '/math') */ {
-            setNavBg('transparent')
-            setLinkColor('#ecf0f3')
+            // if we're on a project page. we still want the nav bar to be opaque if the user scrolls down a project page
+            const handleShadow = () => {
+                if (window.scrollY >= 90) {
+                    setShadow(true);
+                    setNavBg('#ecf0f3')
+                    setLinkColor('#1f2937')
+                    setHamburgerIconColor('#1f2937')
+                }
+                else {
+                    setShadow(false);
+                    setNavBg('transparent')
+                    setLinkColor('#ecf0f3')
+                    setHamburgerIconColor('#ecf0f3')
+                }
+            }
+            window.addEventListener('scroll', handleShadow);
         }
         else {
+            // if were anywhere on the main page
+            setShadow(true);
             setNavBg('#ecf0f3')
             setLinkColor('#1f2937')
+            setHamburgerIconColor('#1f2937')
         }
     }, [router])
 
@@ -30,26 +48,14 @@ const Navbar = () => {
         setNav(!nav) /* switch */
     }
 
-/*     useEffect(() => {
-        const handleShadow = () => {
-            if (window.scrollY >= 90) {
-                setShadow(true);
-            }
-            else {
-                setShadow(false);
-            }
-        }
-        window.addEventListener('scroll', handleShadow);
-    }, []) */
-
     return (
-        <div style={{backgroundColor: `${navBg}`}} className=/* {shadow ?  */'fixed w-full h-20 shadow-xl z-[100]'/*  : 'fixed w-full h-20 z-[100]'} */> {/* the brackets lets you choose your own value instead of being confined to tailwind's pre set intervals */}
+        <div style={{backgroundColor: `${navBg}`}} className={shadow ? 'fixed w-full h-20 shadow-xl z-[100]' : 'fixed w-full h-20 z-[100]'}> {/* the brackets lets you choose your own value instead of being confined to tailwind's pre set intervals */}
             <div className='flex justify-between items-center w-full h-full px-2 2xl:px-16'>
                 <Link href='/'>
                     <Image src="/assets/logo.png" alt="/" width='125' height='50' /> {/* lazy loading image */}
                 </Link>
                 <div>
-                    <ul className='hidden md:flex'> {/* tailwind is mobile first, so this is saying: hide nav items on mobile, and display them as flex on anything above medium screen size */}
+                    <ul style={{color: `${linkColor}`}} className='hidden md:flex'> {/* tailwind is mobile first, so this is saying: hide nav items on mobile, and display them as flex on anything above medium screen size */}
                         <Link href='/'>
                             <li className='ml-10 text-sm uppercase hover:border-b hover:mt-[-.05rem]'>Home</li>
                         </Link>
@@ -66,7 +72,7 @@ const Navbar = () => {
                             <li className='ml-10 text-sm uppercase hover:border-b hover:mt-[-.05rem]'>Contact</li>
                         </Link>   
                     </ul>
-                    <div onClick={handleNav} className='md:hidden'>
+                    <div onClick={handleNav} style={{color: `${hamburgerIconColor}`}} className='md:hidden'>
                         <AiOutlineMenu size={25} className='cursor-pointer' />
                     </div>
                 </div>

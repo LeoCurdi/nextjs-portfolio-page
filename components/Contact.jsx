@@ -11,7 +11,7 @@ import {HiOutlineChevronDoubleUp} from 'react-icons/hi'
 const Contact = () => {
     return (
         <div id='contact' className='w-full lg:h-screen'>
-            <div className='max-w=[1240px] m-auto px-2 py-16 w-full'>
+            <div className='max-w-[1240px] m-auto px-2 py-16 w-full'>
                 <p className='text-xl tracking-widest uppercase text-[#5651e5]'>Contact</p>
                 <h2 className='py-4'>Get In Touch</h2>
                 <div className='grid lg:grid-cols-5 gap-8'>
@@ -29,17 +29,17 @@ const Contact = () => {
                             <div>
                                 <p className='uppercase pt-8'>Connect With Me</p>
                                 <div className='flex items-cetner justify-between py-4'>
-                                    <div className='rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300'>
-                                        <FaLinkedinIn />
+                                    <div className='rounded-full shadow-lg shadow-gray-400 p-[1.2rem] cursor-pointer hover:scale-110 ease-in duration-300'>
+                                        <FaLinkedinIn size={25} />
                                     </div>
-                                    <div className='rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300'>
-                                        <FaGithub />
+                                    <div className='rounded-full shadow-lg shadow-gray-400 p-[1.2rem] cursor-pointer hover:scale-110 ease-in duration-300'>
+                                        <FaGithub size={25} />
                                     </div>
-                                    <div className='rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300'>
-                                        <AiOutlineMail />
+                                    <div className='rounded-full shadow-lg shadow-gray-400 p-[1.2rem] cursor-pointer hover:scale-110 ease-in duration-300'>
+                                        <AiOutlineMail size={25} />
                                     </div>
-                                    <div className='rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300'>
-                                        <BsFillPersonLinesFill />
+                                    <div className='rounded-full shadow-lg shadow-gray-400 p-[1.2rem] cursor-pointer hover:scale-110 ease-in duration-300'>
+                                        <BsFillPersonLinesFill size={25} />
                                     </div>
                                 </div>
                             </div>
