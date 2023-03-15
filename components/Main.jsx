@@ -13,7 +13,7 @@ const Main = () => {
                     <p className='uppercase text-sm tracking-widest text-gray-600'> { "Let's build something together" } </p> {/* the curly brackets on the text prevents the compiler from reading the apostrophe in let's as a string start. can also use &apos; and things like that */}
                     <h1 id='mainPgIdentifier' className='py-4 text-gray-700'>Hi, I&apos;m <span className='text-[#5651e5]'>Leo</span></h1>
                     <h1 className='py-4 text-gray-700'>A Full-Stack Developer</h1>
-                    <p className='py-4 text-gray-600 max-width-[70%] m-auto'>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reiciendis optio iste culpa mollitia. Ratione odio deserunt dolorum vero aspernatur. Distinctio et mollitia doloremque porro minus esse, repellat ea deserunt nesciunt?</p>
+                    <p className='py-4 text-gray-600 max-width-[70%] m-auto'>I&apos;m focused on building responsive front-end web applications that connect with API&apos;s and other backend technologies</p>
                     <div className='flex items-center justify-between max-w-[330px] m-auto py-4'>
                         <a href="http://www.linkedin.com/in/leo-curdi" target='_blank' rel='noreferrer'>
                             <div className='rounded-full shadow-lg shadow-gray-400 p-[1.2rem] cursor-pointer hover:scale-110 ease-in duration-200'>

@@ -20,12 +20,12 @@ const Projects = () => {
                 <p className='text-xl tracking-widest uppercase text-[#5651e5]'>Projects</p>
                 <h2 className='py-4'>What I&apos;ve Built</h2>
                 <div className='grid sm:grid-cols-2 lg:grid-cols-3 gap-8'>
-                    <ProjectItem title='Sorting Visualizer' backgroundImg={sortingVisualizerImg} projectUrl='/sortingVisualizer' />
-                    <ProjectItem title='Cosmic Clash' backgroundImg={cosmicClashImg} projectUrl='/cosmicClash' />
-                    <ProjectItem title='Matrix Screensaver' backgroundImg={matrixImg} projectUrl='/matrix' />
-                    <ProjectItem title='Nasa Photo of the Day' backgroundImg={nasaImg} projectUrl='/nasa' />
-                    <ProjectItem title='Physics Simulator' backgroundImg={physicsImg} projectUrl='/physics' />
-                    <ProjectItem title='Math Visualizations' backgroundImg={mathImg} projectUrl='/math' />
+                    <ProjectItem title='Sorting Visualizer' backgroundImg={sortingVisualizerImg} projectUrl='/sortingVisualizer' tech='Javascript' />
+                    <ProjectItem title='Cosmic Clash' backgroundImg={cosmicClashImg} projectUrl='/cosmicClash' tech='Javascript' />
+                    <ProjectItem title='Matrix Screensaver' backgroundImg={matrixImg} projectUrl='/matrix' tech='Python' />
+                    <ProjectItem title='Nasa Photo of the Day' backgroundImg={nasaImg} projectUrl='/nasa' tech='Javascript' />
+                    <ProjectItem title='Physics Simulator' backgroundImg={physicsImg} projectUrl='/physics' tech='Matter JS' />
+                    <ProjectItem title='Math Visualizations' backgroundImg={mathImg} projectUrl='/math' tech='Javascript' />
                 </div>
             </div>
         </div>
