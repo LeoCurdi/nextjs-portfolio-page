@@ -1,38 +1,69 @@
 import Image from 'next/image'
-import React, {useState} from 'react'
+import React, {useState, useEffect} from 'react'
 import Link from 'next/link'
 import {AiOutlineClose, AiOutlineMenu, AiOutlineMail} from 'react-icons/ai'
 import {FaGithub, FaLinkedinIn} from 'react-icons/fa'
 import {BsFillPersonLinesFill} from 'react-icons/bs'
+import {useRouter} from 'next/router'
 
 
 const Navbar = () => {
     const [nav, setNav] = useState(false)
+/*     const [shadow, setShadow] = useState(false) */
+
+    // give the navbar a background when not on projects page 
+    const [navBg, setNavBg] = useState('#ecf0f3') 
+    const [linkColor, setLinkColor] = useState('#1f2937')
+    const router = useRouter()
+    useEffect(() => {
+        if (!(router.asPath === '/' || router.asPath === '/#about' || router.asPath === '/#skills' || router.asPath === '/#projects' || router.asPath === '/#contact'))/* (router.asPath === '/sortingVisualizer' || router.asPath === '/cosmicClash' || router.asPath === '/matrix' || router.asPath === '/nasa' || router.asPath === '/physics' || router.asPath === '/math') */ {
+            setNavBg('transparent')
+            setLinkColor('#ecf0f3')
+        }
+        else {
+            setNavBg('#ecf0f3')
+            setLinkColor('#1f2937')
+        }
+    }, [router])
 
     const handleNav = () => {
         setNav(!nav) /* switch */
     }
 
+/*     useEffect(() => {
+        const handleShadow = () => {
+            if (window.scrollY >= 90) {
+                setShadow(true);
+            }
+            else {
+                setShadow(false);
+            }
+        }
+        window.addEventListener('scroll', handleShadow);
+    }, []) */
+
     return (
-        <div className='fixed w-full h-20 shadow-xl z-[100]'> {/* the brackets lets you choose your own value instead of being confined to tailwind's pre set intervals */}
-            <div className='flex justify-between items-center w-full h-full px-2 2xl:px-16 bg-[#ecf0f3]'>
-                <Image src="/assets/logo.png" alt="/" width='125' height='50' /> {/* lazy loading image */}
+        <div style={{backgroundColor: `${navBg}`}} className=/* {shadow ?  */'fixed w-full h-20 shadow-xl z-[100]'/*  : 'fixed w-full h-20 z-[100]'} */> {/* the brackets lets you choose your own value instead of being confined to tailwind's pre set intervals */}
+            <div className='flex justify-between items-center w-full h-full px-2 2xl:px-16'>
+                <Link href='/'>
+                    <Image src="/assets/logo.png" alt="/" width='125' height='50' /> {/* lazy loading image */}
+                </Link>
                 <div>
                     <ul className='hidden md:flex'> {/* tailwind is mobile first, so this is saying: hide nav items on mobile, and display them as flex on anything above medium screen size */}
                         <Link href='/'>
-                            <li className='ml-10 text-sm uppercase hover:border-b'>Home</li>
+                            <li className='ml-10 text-sm uppercase hover:border-b hover:mt-[-.05rem]'>Home</li>
                         </Link>
-                        <Link href='/'>
-                            <li className='ml-10 text-sm uppercase hover:border-b'>About</li>
+                        <Link href='/#about'>
+                            <li className='ml-10 text-sm uppercase hover:border-b hover:mt-[-.05rem]'>About</li>
                         </Link>
-                        <Link href='/'>
-                            <li className='ml-10 text-sm uppercase hover:border-b'>Skills</li>
+                        <Link href='/#skills'>
+                            <li className='ml-10 text-sm uppercase hover:border-b hover:mt-[-.05rem]'>Skills</li>
                         </Link>
-                        <Link href='/'>
-                            <li className='ml-10 text-sm uppercase hover:border-b'>Projects</li>
+                        <Link href='/#projects'>
+                            <li className='ml-10 text-sm uppercase hover:border-b hover:mt-[-.05rem]'>Projects</li>
                         </Link>
-                        <Link href='/'>
-                            <li className='ml-10 text-sm uppercase hover:border-b'>Contact</li>
+                        <Link href='/#contact'>
+                            <li className='ml-10 text-sm uppercase hover:border-b hover:mt-[-.05rem]'>Contact</li>
                         </Link>   
                     </ul>
                     <div onClick={handleNav} className='md:hidden'>
@@ -44,8 +75,10 @@ const Navbar = () => {
                 <div className={nav ? 'fixed left-0 top-0 w-[75%] sm:w-[60%] md:w-[45%] h-screen bg-[#ecf0f3] p-10 ease-out duration-[300ms]' 
                                     : 'fixed left-[-100%] top-0 p-10 ease-in duration-[300ms]'}>
                     <div>
-                        <div className='flex w-full items-center justify-between'>
-                            <Image src='/assets/logo.png' width='87' height='35' alt='/' />
+                        <div className='flex w-full items-center justify-between'>                
+                            <Link href='/'>
+                                <Image src="/assets/logo.png" alt="/" width='87' height='35' /> {/* lazy loading image */}
+                            </Link>
                             <div onClick={handleNav} className='rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer'>
                                 <AiOutlineClose size={25} />
                             </div>
@@ -57,19 +90,19 @@ const Navbar = () => {
                     <div className='py-4 flex flex-col'>
                         <ul clasName='uppercase'>
                             <Link href='/'>
-                                <li className='py-4 text-sm'>Home</li>
+                                <li onClick={handleNav} className='py-4 text-sm'>Home</li>
                             </Link>
-                            <Link href='/'>
-                                <li className='py-4 text-sm'>About</li>
+                            <Link href='/#about'>
+                                <li onClick={handleNav} className='py-4 text-sm'>About</li>
                             </Link>
-                            <Link href='/'>
-                                <li className='py-4 text-sm'>Skills</li>
+                            <Link href='/#skills'>
+                                <li onClick={handleNav} className='py-4 text-sm'>Skills</li>
                             </Link>
-                            <Link href='/'>
-                                <li className='py-4 text-sm'>Projects</li>
+                            <Link href='/#projects'>
+                                <li onClick={handleNav} className='py-4 text-sm'>Projects</li>
                             </Link>
-                            <Link href='/'>
-                                <li className='py-4 text-sm'>Contact</li>
+                            <Link href='/#contact'>
+                                <li onClick={handleNav} className='py-4 text-sm'>Contact</li>
                             </Link>  
                         </ul>
                         <div className='pt-16'>

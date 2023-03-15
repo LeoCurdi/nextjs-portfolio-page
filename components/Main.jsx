@@ -7,7 +7,7 @@ import {BsFillPersonLinesFill} from 'react-icons/bs'
 
 const Main = () => {
     return (
-        <div className='w-full h-screen text-center'>
+        <div id='home' className='w-full h-screen text-center'>
             <div className='max-w-[1240px] w-full h-full mx-auto p-2 flex justify-center items-center'>
                 <div>
                     <p className='uppercase text-sm tracking-widest text-gray-600'> { "Let's build something together" } </p> {/* the curly brackets on the text prevents the compiler from reading the apostrophe in let's as a string start. can also use &apos; and things like that */}
