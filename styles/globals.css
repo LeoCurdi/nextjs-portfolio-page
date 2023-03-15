@@ -6,7 +6,7 @@
 
 html {
   scroll-behavior: smooth !important;
-  /* font-family: 'Raleway', sans-serif; */
+  font-family: 'Raleway', sans-serif;
 }
 
 @layer base {
@@ -20,7 +20,7 @@ html {
     }
 
     h1 {
-        @apply text-4xl sm:text-5xl md:text-6xl /* this is basically some responsiveness stuff: once you get past the small screen size (when not on mobile) use these other styles instead */
+        @apply text-4xl sm:text-5xl md:text-6xl font-[sans-serif] /* this is basically some responsiveness stuff: once you get past the small screen size (when not on mobile) use these other styles instead */
     }
 
     h2 {

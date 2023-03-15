@@ -28,9 +28,8 @@ const sortingVisualizer = () => {
                         Maxime vitae ducimus fugit eum tempora quasi laudantium placeat inventore iure. Molestias accusantium explicabo iure odit reiciendis delectus possimus ab, consectetur sint itaque temporibus nam nostrum animi exercitationem natus iusto.
                         Numquam, nam. Eaque qui ipsa amet. Delectus, doloremque rem! Ab eveniet omnis voluptas magnam architecto iure a odit eum maiores corporis. Eveniet quaerat adipisci magni nihil dolores magnam vel rerum?
                     </p>
-                    <a href="https://sortingvisualizer.ldcurdi.com/" target='_blank' rel='noreferrer'><button className='px-8 py-2 mt-4 mr-8'>Demo</button></a>
-                    
-                    <button className='px-8 py-2 mt-4'>Code</button>
+                    <a href="https://sortingvisualizer.ldcurdi.com/" target='_blank' rel='noreferrer'><button className='px-8 py-2 mt-4 mr-8'>View Project</button></a>
+                    <a href="https://github.com/LeoCurdi/sortingVisualizer" target='_blank' rel='noreferrer'><button className='px-8 py-2 mt-4 mr-8'>View Code</button></a>
                 </div>
                 <div className='col-span-4 md:col-span-1 shadow-xl shadow-gray-400 rounded-xl p-4'>
                     <div className='p-2'>

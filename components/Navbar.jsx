@@ -11,38 +11,50 @@ const Navbar = () => {
     const [nav, setNav] = useState(false)
     const [shadow, setShadow] = useState(false)
 
-    // give the navbar a background when not on projects page 
+// give the navbar a background when not on projects page 
     const [navBg, setNavBg] = useState('#ecf0f3') 
     const [linkColor, setLinkColor] = useState('#1f2937')
     const [hamburgerIconColor, setHamburgerIconColor] = useState('#1f2937')
     const router = useRouter()
+    const onMain = (router.asPath === '/' || router.asPath === '/#about' || router.asPath === '/#skills' || router.asPath === '/#projects' || router.asPath === '/#contact')
+    
     useEffect(() => {
-        if (!(router.asPath === '/' || router.asPath === '/#about' || router.asPath === '/#skills' || router.asPath === '/#projects' || router.asPath === '/#contact'))/* (router.asPath === '/sortingVisualizer' || router.asPath === '/cosmicClash' || router.asPath === '/matrix' || router.asPath === '/nasa' || router.asPath === '/physics' || router.asPath === '/math') */ {
+        if (!onMain) {
             // if we're on a project page. we still want the nav bar to be opaque if the user scrolls down a project page
-            const handleShadow = () => {
-                if (window.scrollY >= 90) {
-                    setShadow(true);
-                    setNavBg('#ecf0f3')
-                    setLinkColor('#1f2937')
-                    setHamburgerIconColor('#1f2937')
-                }
-                else {
-                    setShadow(false);
-                    setNavBg('transparent')
-                    setLinkColor('#ecf0f3')
-                    setHamburgerIconColor('#ecf0f3')
-                }
-            }
+            setShadow(false);
+            setNavBg('transparent')
+            setLinkColor('#ecf0f3')
+            setHamburgerIconColor('#ecf0f3')
+
             window.addEventListener('scroll', handleShadow);
         }
         else {
-            // if were anywhere on the main page
+            setShadow(true);
+            setNavBg('#ecf0f3');
+            setLinkColor('#1f2937');
+            setHamburgerIconColor('#1f2937');
+        }
+
+        return () => {
+            window.removeEventListener('scroll', handleShadow);
+        };
+    }, [router])
+
+    const handleShadow = () => {
+        if (window.scrollY >= 50) {
             setShadow(true);
             setNavBg('#ecf0f3')
             setLinkColor('#1f2937')
             setHamburgerIconColor('#1f2937')
         }
-    }, [router])
+        else {
+            setShadow(false);
+            setNavBg('transparent')
+            setLinkColor('#ecf0f3')
+            setHamburgerIconColor('#ecf0f3')
+        }
+    }
+
 
     const handleNav = () => {
         setNav(!nav) /* switch */
@@ -57,19 +69,40 @@ const Navbar = () => {
                 <div>
                     <ul style={{color: `${linkColor}`}} className='hidden md:flex'> {/* tailwind is mobile first, so this is saying: hide nav items on mobile, and display them as flex on anything above medium screen size */}
                         <Link href='/'>
-                            <li className='ml-10 text-sm uppercase hover:border-b hover:mt-[-.05rem]'>Home</li>
+                            <div className='px-5 2xl:px-6 py-2 hover:shadow-xl hover:shadow-gray-400 hover:rounded-xl hover:uppercase hover:bg-gradient-to-r hover:from-[#5651e5] hover:to-[#709dff] hover:text-white'>
+                                <li className='text-sm uppercase'>Home</li>
+                            </div>
+                            {/* <li className='ml-10 text-sm uppercase hover:border-b hover:mt-[-.05rem]'>Home</li> */}
                         </Link>
                         <Link href='/#about'>
-                            <li className='ml-10 text-sm uppercase hover:border-b hover:mt-[-.05rem]'>About</li>
+                            <div className='px-5 2xl:px-6 py-2 hover:shadow-xl hover:shadow-gray-400 hover:rounded-xl hover:uppercase hover:bg-gradient-to-r hover:from-[#5651e5] hover:to-[#709dff] hover:text-white'>
+                                <li className='text-sm uppercase'>About</li>
+                            </div>
+                            {/* <li className='ml-10 text-sm uppercase hover:border-b hover:mt-[-.05rem]'>About</li> */}
                         </Link>
                         <Link href='/#skills'>
-                            <li className='ml-10 text-sm uppercase hover:border-b hover:mt-[-.05rem]'>Skills</li>
+                            <div className='px-5 2xl:px-6 py-2 hover:shadow-xl hover:shadow-gray-400 hover:rounded-xl hover:uppercase hover:bg-gradient-to-r hover:from-[#5651e5] hover:to-[#709dff] hover:text-white'>
+                                <li className='text-sm uppercase'>Skills</li>
+                            </div>
+                            {/* <li className='ml-10 text-sm uppercase hover:border-b hover:mt-[-.05rem]'>Skills</li> */}
                         </Link>
                         <Link href='/#projects'>
-                            <li className='ml-10 text-sm uppercase hover:border-b hover:mt-[-.05rem]'>Projects</li>
+                            <div className='px-5 2xl:px-6 py-2 hover:shadow-xl hover:shadow-gray-400 hover:rounded-xl hover:uppercase hover:bg-gradient-to-r hover:from-[#5651e5] hover:to-[#709dff] hover:text-white'>
+                                <li className='text-sm uppercase'>Projects</li>
+                            </div>
+                            {/* <li className='ml-10 text-sm uppercase hover:border-b hover:mt-[-.05rem]'>Projects</li> */}
+                        </Link>
+                        <Link href='/assets/Resume.pdf'>
+                            <div className='px-5 2xl:px-6 py-2 hover:shadow-xl hover:shadow-gray-400 hover:rounded-xl hover:uppercase hover:bg-gradient-to-r hover:from-[#5651e5] hover:to-[#709dff] hover:text-white'>
+                                <li className='text-sm uppercase'>Resume</li>
+                            </div>
+                            {/* <li className='ml-10 text-sm uppercase hover:border-b hover:mt-[-.05rem]'>Projects</li> */}
                         </Link>
                         <Link href='/#contact'>
-                            <li className='ml-10 text-sm uppercase hover:border-b hover:mt-[-.05rem]'>Contact</li>
+                            <div className='px-5 2xl:px-6 py-2 hover:shadow-xl hover:shadow-gray-400 hover:rounded-xl hover:uppercase hover:bg-gradient-to-r hover:from-[#5651e5] hover:to-[#709dff] hover:text-white'>
+                                <li className='text-sm uppercase'>Contact</li>
+                            </div>
+                            {/* <li className='ml-10 text-sm uppercase hover:border-b hover:mt-[-.05rem]'>Contact</li> */}
                         </Link>   
                     </ul>
                     <div onClick={handleNav} style={{color: `${hamburgerIconColor}`}} className='md:hidden'>
@@ -107,25 +140,36 @@ const Navbar = () => {
                             <Link href='/#projects'>
                                 <li onClick={handleNav} className='py-4 text-sm'>Projects</li>
                             </Link>
+                            <Link href='/assets/Resume.pdf'>
+                                <li onClick={handleNav} className='py-4 text-sm'>Resume</li>
+                            </Link>
                             <Link href='/#contact'>
                                 <li onClick={handleNav} className='py-4 text-sm'>Contact</li>
                             </Link>  
                         </ul>
-                        <div className='pt-16'>
+                        <div className='pt-8'>
                             <p className='uppercase tracking-widest text-[#5651e5]'>Let&apos;s Connect</p>
                             <div className='flex items-center justify-between my-4 w-full sm:w-[80%]'>
-                                <div className='rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300'>
-                                    <FaLinkedinIn />
-                                </div>
-                                <div className='rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300'>
-                                    <FaGithub />
-                                </div>
-                                <div className='rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300'>
-                                    <AiOutlineMail />
-                                </div>
-                                <div className='rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300'>
-                                    <BsFillPersonLinesFill />
-                                </div>
+                                <a href="http://www.linkedin.com/in/leo-curdi" target='_blank' rel='noreferrer'>
+                                    <div className='rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-200'>
+                                        <FaLinkedinIn />
+                                    </div>
+                                </a>
+                                <a href="https://github.com/LeoCurdi" target='_blank' rel='noreferrer'>
+                                    <div className='rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-200'>
+                                        <FaGithub />
+                                    </div>
+                                </a>
+                                <a href="mailto:leonardo.curdi@wsu.edu" target='_blank' rel='noreferrer'>
+                                    <div className='rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-200'>
+                                        <AiOutlineMail />
+                                    </div>
+                                </a>
+                                <a href="/assets/Resume.pdf" rel='noreferrer'>
+                                    <div className='rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-200'>
+                                        <BsFillPersonLinesFill />
+                                    </div>
+                                </a>
                             </div>
                         </div>
                     </div>

@@ -19,7 +19,7 @@ const Contact = () => {
                     <div className='col-span-3 lg:col-span-2 w-full h-full shadow-xl shadow-gray-400 rounded-xl p-4'>
                         <div className='lg:p-4 h-full'>
                             <div>
-                                <Image src={contactImg} className='rounded-xl hover:scale-105 ease-in duration-200' alt='/' />
+                                <Image src={contactImg} className='rounded-xl' alt='/' /> {/* hover:scale-105 ease-in duration-200 */}
                             </div>
                             <div>
                                 <h2 className='py-2'>Leo Curdi</h2>
@@ -29,18 +29,26 @@ const Contact = () => {
                             <div>
                                 <p className='uppercase pt-8'>Connect With Me</p>
                                 <div className='flex items-cetner justify-between py-4'>
-                                    <div className='rounded-full shadow-lg shadow-gray-400 p-[1.2rem] cursor-pointer hover:scale-110 ease-in duration-300'>
-                                        <FaLinkedinIn size={25} />
-                                    </div>
-                                    <div className='rounded-full shadow-lg shadow-gray-400 p-[1.2rem] cursor-pointer hover:scale-110 ease-in duration-300'>
-                                        <FaGithub size={25} />
-                                    </div>
-                                    <div className='rounded-full shadow-lg shadow-gray-400 p-[1.2rem] cursor-pointer hover:scale-110 ease-in duration-300'>
-                                        <AiOutlineMail size={25} />
-                                    </div>
-                                    <div className='rounded-full shadow-lg shadow-gray-400 p-[1.2rem] cursor-pointer hover:scale-110 ease-in duration-300'>
-                                        <BsFillPersonLinesFill size={25} />
-                                    </div>
+                                    <a href="http://www.linkedin.com/in/leo-curdi" target='_blank' rel='noreferrer'>
+                                        <div className='rounded-full shadow-lg shadow-gray-400 p-[1.2rem] cursor-pointer hover:scale-110 ease-in duration-200'>
+                                            <FaLinkedinIn size={25} />
+                                        </div>
+                                    </a>
+                                    <a href="https://github.com/LeoCurdi" target='_blank' rel='noreferrer'>
+                                        <div className='rounded-full shadow-lg shadow-gray-400 p-[1.2rem] cursor-pointer hover:scale-110 ease-in duration-200'>
+                                            <FaGithub size={25} />
+                                        </div>
+                                    </a>
+                                    <a href="mailto:leonardo.curdi@wsu.edu" target='_blank' rel='noreferrer'>
+                                        <div className='rounded-full shadow-lg shadow-gray-400 p-[1.2rem] cursor-pointer hover:scale-110 ease-in duration-200'>
+                                            <AiOutlineMail size={25} />
+                                        </div>
+                                    </a>
+                                    <a href="/assets/Resume.pdf" rel='noreferrer'>
+                                        <div className='rounded-full shadow-lg shadow-gray-400 p-[1.2rem] cursor-pointer hover:scale-110 ease-in duration-200'>
+                                            <BsFillPersonLinesFill size={25} />
+                                        </div>
+                                    </a>
                                 </div>
                             </div>
                         </div>
@@ -88,7 +96,7 @@ const Contact = () => {
                 </div>
                 <div className='flex justify-center py-12'>
                     <Link href='/'>
-                        <div className='rounded-full shadow-lg shadow-gray-400 p-4 cursor-pointer hover:scale-110 ease-in duration-300'>
+                        <div className='rounded-full shadow-lg shadow-gray-400 p-4 cursor-pointer hover:scale-110 ease-in duration-200'>
                             <HiOutlineChevronDoubleUp className='text-[#5651e5]' size={30} /> {/* using size property of react icons */}
                         </div>
                     </Link>

@@ -1,6 +1,7 @@
 import React from 'react'
 import Image from 'next/image'
 import aboutImg from '../public/assets/about.jpg'
+import Link from 'next/link'
 
 const About = () => {
     return (
@@ -10,10 +11,12 @@ const About = () => {
                     <p className='uppercase text-xl tracking-widest text-[#5651e5]'>About</p>
                     <h2 className='py-4'>Who I Am</h2>
                     <p className='py-2 text-gray-600'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt autem quo sapiente ex harum fuga molestiae sed necessitatibus ipsa voluptas! Fugit quibusdam earum iure et tempora atque, repudiandae porro eligendi!</p>
-                    <p className='py-2 text-gray-600 underline cursor-pointer'>Check out some of my latest projects</p>
+                    <Link href='/#projects'>
+                        <p className='py-2 text-gray-600 underline cursor-pointer'>Check out some of my latest projects</p>
+                    </Link>
                 </div>
-                <div className='w-full h-auto m-auto shadow-xl shadow-gray-400 rounded-xl flex items-center justify-center p-4 hover:scale-105 ease-in duration-300'>
-                    <Image src={aboutImg} className='hidden md:flex rounded-xl' alt='/' />
+                <div className='hidden md:flex w-full h-auto m-auto shadow-xl shadow-gray-400 rounded-xl items-center justify-center p-4'> {/* hover:scale-105 ease-in duration-300 */}
+                    <Image src={aboutImg} className='rounded-xl' alt='/' />
                 </div>
             </div>
         </div>
