@@ -4,6 +4,20 @@ import Link from 'next/link'
 import {AiOutlineClose, AiOutlineMenu, AiOutlineMail} from 'react-icons/ai'
 import {FaGithub, FaLinkedinIn} from 'react-icons/fa'
 import {BsFillPersonLinesFill} from 'react-icons/bs'
+import SkillItem from './SkillItem'
+
+import htmlImg from '../public/assets/skill-icons/html.png'
+import cssImg from '../public/assets/skill-icons/css.png'
+import jsImg from '../public/assets/skill-icons/javascript.png'
+import reactImg from '../public/assets/skill-icons/react.png'
+import tailwindImg from '../public/assets/skill-icons/tailwind.png'
+import firebaseImg from '../public/assets/skill-icons/firebase.png'
+import nextImg from '../public/assets/skill-icons/nextjs.png'
+import nodeImg from '../public/assets/skill-icons/node.png'
+import gitImg from '../public/assets/skill-icons/git.png'
+import cImg from '../public/assets/skill-icons/c.png'
+import cppImg from '../public/assets/skill-icons/cpp.png'
+import pythonImg from '../public/assets/skill-icons/python.png'
 
 
 const Skills = () => {
@@ -14,137 +28,18 @@ const Skills = () => {
                 <h2 className='py-4'>What I Can Do</h2>
                 <div className='grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3 md:gap-6'>
                     
-                    <div className='p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-200'>
-                        <div className='grid grid-cols-2 gap-4 justify-center items-center'>
-                            <div className='m-auto'>
-                            <Image src='/assets/skill-icons/html.png' width='64' height='64' alt='/' />
-                            </div>
-                            <div className='flex flex-col items-center justify-center'>
-                                <h3>HTML</h3>
-                            </div>
-                        </div>
-                    </div>
-                                        
-                    <div className='p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-200'>
-                        <div className='grid grid-cols-2 gap-4 justify-center items-center'>
-                            <div className='m-auto'>
-                            <Image src='/assets/skill-icons/css.png' width='64' height='64' alt='/' />
-                            </div>
-                            <div className='flex flex-col items-center justify-center'>
-                                <h3>CSS</h3>
-                            </div>
-                        </div>
-                    </div>
-                                        
-                    <div className='p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-200'>
-                        <div className='grid grid-cols-2 gap-4 justify-center items-center'>
-                            <div className='m-auto'>
-                            <Image src='/assets/skill-icons/javascript.png' width='64' height='64' alt='/' />
-                            </div>
-                            <div className='flex flex-col items-center justify-center'>
-                                <h3>JavaScript</h3>
-                            </div>
-                        </div>
-                    </div>
-                                        
-                    <div className='p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-200'>
-                        <div className='grid grid-cols-2 gap-4 justify-center items-center'>
-                            <div className='m-auto'>
-                            <Image src='/assets/skill-icons/react.png' width='64' height='64' alt='/' />
-                            </div>
-                            <div className='flex flex-col items-center justify-center'>
-                                <h3>React</h3>
-                            </div>
-                        </div>
-                    </div>
-                                        
-                    <div className='p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-200'>
-                        <div className='grid grid-cols-2 gap-4 justify-center items-center'>
-                            <div className='m-auto'>
-                            <Image src='/assets/skill-icons/tailwind.png' width='64' height='64' alt='/' />
-                            </div>
-                            <div className='flex flex-col items-center justify-center'>
-                                <h3>Tailwind</h3>
-                            </div>
-                        </div>
-                    </div>
-                                        
-                    <div className='p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-200'>
-                        <div className='grid grid-cols-2 gap-4 justify-center items-center'>
-                            <div className='m-auto'>
-                            <Image src='/assets/skill-icons/firebase.png' width='64' height='64' alt='/' />
-                            </div>
-                            <div className='flex flex-col items-center justify-center'>
-                                <h3>Firebase</h3>
-                            </div>
-                        </div>
-                    </div>
-                                         
-                    <div className='p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300'>
-                        <div className='grid grid-cols-2 gap-4 justify-center items-center'>
-                            <div className='m-auto'>
-                            <Image src='/assets/skill-icons/nextjs.png' width='64' height='64' alt='/' />
-                            </div>
-                            <div className='flex flex-col items-center justify-center'>
-                                <h3>Next</h3>
-                            </div>
-                        </div>
-                    </div>
-                                       
-                    <div className='p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300'>
-                        <div className='grid grid-cols-2 gap-4 justify-center items-center'>
-                            <div className='m-auto'>
-                            <Image src='/assets/skill-icons/node.png' width='64' height='64' alt='/' />
-                            </div>
-                            <div className='flex flex-col items-center justify-center'>
-                                <h3>Node</h3>
-                            </div>
-                        </div>
-                    </div>
-                                                            
-                    <div className='p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-200'>
-                        <div className='grid grid-cols-2 gap-4 justify-center items-center'>
-                            <div className='m-auto'>
-                            <Image src='/assets/skill-icons/git.png' width='64' height='64' alt='/' />
-                            </div>
-                            <div className='flex flex-col items-center justify-center'>
-                                <h3>Git</h3>
-                            </div>
-                        </div>
-                    </div>
-                                                                           
-                    <div className='p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-200'>
-                        <div className='grid grid-cols-2 gap-4 justify-center items-center'>
-                            <div className='m-auto'>
-                            <Image src='/assets/skill-icons/c.png' width='64' height='64' alt='/' />
-                            </div>
-                            <div className='flex flex-col items-center justify-center'>
-                                <h3>C</h3>
-                            </div>
-                        </div>
-                    </div>
-                                                            
-                    <div className='p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-200'>
-                        <div className='grid grid-cols-2 gap-4 justify-center items-center'>
-                            <div className='m-auto'>
-                            <Image src='/assets/skill-icons/cpp.png' width='64' height='64' alt='/' />
-                            </div>
-                            <div className='flex flex-col items-center justify-center'>
-                                <h3>C++</h3>
-                            </div>
-                        </div>
-                    </div>
-                                                            
-                    <div className='p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-200'>
-                        <div className='grid grid-cols-2 gap-4 justify-center items-center'>
-                            <div className='m-auto'>
-                            <Image src='/assets/skill-icons/python.png' width='64' height='64' alt='/' />
-                            </div>
-                            <div className='flex flex-col items-center justify-center'>
-                                <h3>Python</h3>
-                            </div>
-                        </div>
-                    </div>
+                    <SkillItem name='HTML' backgroundImg={htmlImg} />
+                    <SkillItem name='CSS' backgroundImg={cssImg} />
+                    <SkillItem name='JavaScript' backgroundImg={jsImg} />
+                    <SkillItem name='React' backgroundImg={reactImg} />
+                    <SkillItem name='Tailwind' backgroundImg={tailwindImg} />
+                    <SkillItem name='Firebase' backgroundImg={firebaseImg} />
+                    <SkillItem name='Next' backgroundImg={nextImg} />
+                    <SkillItem name='Node' backgroundImg={nodeImg} />
+                    <SkillItem name='Git' backgroundImg={gitImg} />
+                    <SkillItem name='C' backgroundImg={cImg} />
+                    <SkillItem name='C++' backgroundImg={cppImg} />
+                    <SkillItem name='Python' backgroundImg={pythonImg} />
 
                 </div>
             </div>

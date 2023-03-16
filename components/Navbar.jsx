@@ -160,11 +160,11 @@ const Navbar = () => {
                                         <FaGithub />
                                     </div>
                                 </a>
-                                <a href="/#contact">
+                                <Link href="/#contact">
                                     <div className='rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-200' onClick={handleNav} >
                                         <AiOutlineMail />
                                     </div>
-                                </a>
+                                </Link>
                                 <a href="/assets/Resume.pdf" rel='noreferrer'>
                                     <div className='rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-200'>
                                         <BsFillPersonLinesFill />

@@ -1,5 +1,6 @@
 import Image from 'next/image'
 import React from 'react'
+import Link from 'next/link'
 import { AiOutlineMail} from 'react-icons/ai'
 import {FaGithub, FaLinkedinIn} from 'react-icons/fa'
 import {BsFillPersonLinesFill} from 'react-icons/bs'
@@ -25,11 +26,11 @@ const Main = () => {
                                 <FaGithub size={25} />
                             </div>
                         </a>
-                        <a href="/#contact">
+                        <Link href='/#contact'>
                             <div className='rounded-full shadow-lg shadow-gray-400 p-[1.2rem] cursor-pointer hover:scale-110 ease-in duration-200'>
                                 <AiOutlineMail size={25} />
                             </div>
-                        </a>
+                        </Link> 
                         <a href="/assets/Resume.pdf" rel='noreferrer'>
                             <div className='rounded-full shadow-lg shadow-gray-400 p-[1.2rem] cursor-pointer hover:scale-110 ease-in duration-200'>
                                 <BsFillPersonLinesFill size={25} />
