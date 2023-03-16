@@ -64,7 +64,7 @@ const Navbar = () => {
         <div style={{backgroundColor: `${navBg}`}} className={shadow ? 'fixed w-full h-20 shadow-xl z-[100]' : 'fixed w-full h-20 z-[100]'}> {/* the brackets lets you choose your own value instead of being confined to tailwind's pre set intervals */}
             <div className='flex justify-between items-center w-full h-full px-2 2xl:px-16'>
                 <Link href='/'>
-                    <Image src="/assets/logo.png" alt="/" width='125' height='50' /> {/* lazy loading image */}
+                    <Image src="/assets/logo.png" alt="/" width='110' height='40' /> {/* lazy loading image */}
                 </Link>
                 <div>
                     <ul style={{color: `${linkColor}`}} className='hidden md:flex'> {/* tailwind is mobile first, so this is saying: hide nav items on mobile, and display them as flex on anything above medium screen size */}
@@ -92,7 +92,7 @@ const Navbar = () => {
                             </div>
                             {/* <li className='ml-10 text-sm uppercase hover:border-b hover:mt-[-.05rem]'>Projects</li> */}
                         </Link>
-                        <Link href='/assets/Resume.pdf'>
+                        <Link href='/assets/Resume.pdf' target='_blank'>
                             <div className='px-5 2xl:px-6 py-2   hover:rounded-xl hover:uppercase hover:bg-gradient-to-r hover:from-[#5651e5] hover:to-[#709dff] hover:text-white'>
                                 <li className='text-sm uppercase'>Resume</li>
                             </div>
@@ -111,7 +111,7 @@ const Navbar = () => {
                 </div>
             </div>
             <div className={nav ? 'md:hidden fixed left-0 top-0 w-full h-screen bg-black/70 ease-out duration-300' : ''}> {/* 70 is alpha (opacity) */}
-                <div className={nav ? 'fixed left-0 top-0 w-[75%] sm:w-[60%] md:w-[45%] h-screen bg-[#ecf0f3] p-10 ease-out duration-[300ms]' 
+                <div className={nav ? 'fixed left-0 top-0 w-[75%] sm:w-[60%] md:w-[45%] h-screen bg-[#ecf0f3] p-10 pt-5 ease-out duration-[300ms]' 
                                     : 'fixed left-[-100%] top-0 p-10 ease-in duration-[300ms]'}>
                     <div>
                         <div className='flex w-full items-center justify-between'>                
@@ -126,7 +126,7 @@ const Navbar = () => {
                             <p className='w-[85%] md:w-[90%] py-4'>Let&apos;s build something legendary together</p>
                         </div>
                     </div>
-                    <div className='py-4 flex flex-col'>
+                    <div className='py-2 flex flex-col'>
                         <ul clasName='uppercase'>
                             <Link href='/'>
                                 <li onClick={handleNav} className='py-4 text-sm'>Home</li>
@@ -160,8 +160,8 @@ const Navbar = () => {
                                         <FaGithub />
                                     </div>
                                 </a>
-                                <a href="mailto:leonardo.curdi@wsu.edu" target='_blank' rel='noreferrer'>
-                                    <div className='rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-200'>
+                                <a href="/#contact">
+                                    <div className='rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-200' onClick={handleNav} >
                                         <AiOutlineMail />
                                     </div>
                                 </a>

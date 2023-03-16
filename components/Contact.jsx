@@ -11,7 +11,7 @@ import {HiOutlineChevronDoubleUp} from 'react-icons/hi'
 const Contact = () => {
     return (
         <div id='contact' className='w-full lg:h-screen'>
-            <div className='max-w-[1240px] m-auto px-2 py-16 w-full'>
+            <div className='max-w-[1240px] pt-32 m-auto px-2 w-full'>
                 <p className='text-xl tracking-widest uppercase text-[#5651e5]'>Contact</p>
                 <h2 className='py-4'>Get In Touch</h2>
                 <div className='grid lg:grid-cols-5 gap-8'>
@@ -39,11 +39,11 @@ const Contact = () => {
                                             <FaGithub size={25} />
                                         </div>
                                     </a>
-                                    <a href="mailto:leonardo.curdi@wsu.edu" target='_blank' rel='noreferrer'>
+{/*                                     <a href="/#contact">
                                         <div className='rounded-full shadow-lg shadow-gray-400 p-[1.2rem] cursor-pointer hover:scale-110 ease-in duration-200'>
                                             <AiOutlineMail size={25} />
                                         </div>
-                                    </a>
+                                    </a> */}
                                     <a href="/assets/Resume.pdf" rel='noreferrer'>
                                         <div className='rounded-full shadow-lg shadow-gray-400 p-[1.2rem] cursor-pointer hover:scale-110 ease-in duration-200'>
                                             <BsFillPersonLinesFill size={25} />
