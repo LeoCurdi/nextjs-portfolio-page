@@ -1,6 +1,6 @@
 import Image from 'next/image'
 import React, {useState} from 'react'
-import cosmicClashImg from '../public/assets/project-images/cosmicClash.png'
+import cosmicClashImg from '../public/assets/project-images/cosmicClash1.png'
 import Link from 'next/link'
 import {AiOutlineClose, AiOutlineMenu, AiOutlineMail} from 'react-icons/ai'
 import {FaGithub, FaLinkedinIn} from 'react-icons/fa'
@@ -15,32 +15,29 @@ const cosmicClash = () => {
                 <Image className='absolute z-1' layout='fill' objectFit='cover' src={cosmicClashImg} alt='/' />
                 <div className='absolute top-[70%] max-w-[1240px] w-full left-[50%] right-[50%] translate-x-[-50%] translate-y-[-50%] text-white z-10 p-2'>
                     <h2 className='py-2'>Cosmic Clash</h2>
-                    <h3>React JS / Tailwind / Firebase</h3>
+                    <h3>Javascript</h3>
                 </div>
             </div>
 
             <div className='max-w-[1240px] mx-auto p-2 grid md:grid-cols-5 gap-8 pt-8'>
                 <div className='col-span-4'>
-                    <p>Project</p>
+                    {/* <p>Project</p> */}
                     <h2>Overview</h2>
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum fugit nostrum debitis ipsa exercitationem iusto pariatur consequuntur. Quia ullam cupiditate dolores doloribus voluptatem sequi quo repellat, vitae, aperiam obcaecati perspiciatis?
-                        Maxime vitae ducimus fugit eum tempora quasi laudantium placeat inventore iure. Molestias accusantium explicabo iure odit reiciendis delectus possimus ab, consectetur sint itaque temporibus nam nostrum animi exercitationem natus iusto.
-                        Numquam, nam. Eaque qui ipsa amet. Delectus, doloremque rem! Ab eveniet omnis voluptas magnam architecto iure a odit eum maiores corporis. Eveniet quaerat adipisci magni nihil dolores magnam vel rerum?
+                    <p className='pt-1'>
+                        Cosmic Clash is an arcade style shooting game inspired by Agar.io. The player moves around the screen, shooting enemies 
+                        which explode on impact, collects ammo, and tries not to get hit by the enemies. The randomly generated enemies are 
+                        aware of and target the player.
                     </p>
-                    <a href="https://cosmicclash.ldcurdi.com/" target='_blank' rel='noreferrer'><button className='px-8 py-2 mt-4 mr-8'>Demo</button></a>
-                    <button className='px-8 py-2 mt-4'>Code</button>
+                    <a href="https://cosmic-clash.vercel.app/" target='_blank' rel='noreferrer'><button className='px-8 py-2 mt-4 mr-4 sm:mr-8'>View Project</button></a>
+                    <a href="https://github.com/LeoCurdi/cosmicClash" target='_blank' rel='noreferrer'><button className='px-8 py-2 mt-4'>View Code</button></a>
                 </div>
                 <div className='col-span-4 md:col-span-1 shadow-xl shadow-gray-400 rounded-xl p-4'>
                     <div className='p-2'>
                         <p className='text-center font-bold pb-2'>Technologies</p>
                         <div className='grid grid-cols-3 md:grid-cols-1'>
-                            <p className='text-gray-600 py-2 flex items-center'><RiRadioButtonFill className='pr-1'/>React</p>
-                            <p className='text-gray-600 py-2 flex items-center'><RiRadioButtonFill className='pr-1'/>Tailwind</p>
+                            <p className='text-gray-600 py-2 flex items-center'><RiRadioButtonFill className='pr-1'/>HTML</p>
+                            <p className='text-gray-600 py-2 flex items-center'><RiRadioButtonFill className='pr-1'/>CSS</p>
                             <p className='text-gray-600 py-2 flex items-center'><RiRadioButtonFill className='pr-1'/>Javascript</p>
-                            <p className='text-gray-600 py-2 flex items-center'><RiRadioButtonFill className='pr-1'/>Firebase</p>
-                            <p className='text-gray-600 py-2 flex items-center'><RiRadioButtonFill className='pr-1'/>Google API</p>
-                            <p className='text-gray-600 py-2 flex items-center'><RiRadioButtonFill className='pr-1'/>Zillow API</p>
                         </div>
                     </div>
                 </div>

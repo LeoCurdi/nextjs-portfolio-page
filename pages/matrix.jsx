@@ -15,32 +15,29 @@ const matrix = () => {
                 <Image className='absolute z-1' layout='fill' objectFit='cover' src={matrixImg} alt='/' />
                 <div className='absolute top-[70%] max-w-[1240px] w-full left-[50%] right-[50%] translate-x-[-50%] translate-y-[-50%] text-white z-10 p-2'>
                     <h2 className='py-2'>Matrix Screensaver</h2>
-                    <h3>React JS / Tailwind / Firebase</h3>
+                    <h3>Python / Pygame</h3>
                 </div>
             </div>
 
             <div className='max-w-[1240px] mx-auto p-2 grid md:grid-cols-5 gap-8 pt-8'>
                 <div className='col-span-4'>
-                    <p>Project</p>
+                    {/* <p>Project</p> */}
                     <h2>Overview</h2>
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum fugit nostrum debitis ipsa exercitationem iusto pariatur consequuntur. Quia ullam cupiditate dolores doloribus voluptatem sequi quo repellat, vitae, aperiam obcaecati perspiciatis?
-                        Maxime vitae ducimus fugit eum tempora quasi laudantium placeat inventore iure. Molestias accusantium explicabo iure odit reiciendis delectus possimus ab, consectetur sint itaque temporibus nam nostrum animi exercitationem natus iusto.
-                        Numquam, nam. Eaque qui ipsa amet. Delectus, doloremque rem! Ab eveniet omnis voluptas magnam architecto iure a odit eum maiores corporis. Eveniet quaerat adipisci magni nihil dolores magnam vel rerum?
+                    <p className='pt-1'>
+                        Used Python along with the Pygame module to create a matrix rain effect. Columns of characters from the Katakana alphabet 
+                        generate randomly and "rain" down the screen. Used Pygbag to convert the Pygame window into a hostable webpage.
                     </p>
-                    <a href="https://matrix.ldcurdi.com/" target='_blank' rel='noreferrer'><button className='px-8 py-2 mt-4 mr-8'>Demo</button></a>
-                    <button className='px-8 py-2 mt-4'>Code</button>
+                    <a href="https://matrix-screensaver.vercel.app/" target='_blank' rel='noreferrer'><button className='px-8 py-2 mt-4 mr-4 sm:mr-8'>View Project</button></a>
+                    <a href="https://github.com/LeoCurdi/matrixScreensaver" target='_blank' rel='noreferrer'><button className='px-8 py-2 mt-4'>View Code</button></a>
                 </div>
                 <div className='col-span-4 md:col-span-1 shadow-xl shadow-gray-400 rounded-xl p-4'>
                     <div className='p-2'>
                         <p className='text-center font-bold pb-2'>Technologies</p>
                         <div className='grid grid-cols-3 md:grid-cols-1'>
-                            <p className='text-gray-600 py-2 flex items-center'><RiRadioButtonFill className='pr-1'/>React</p>
-                            <p className='text-gray-600 py-2 flex items-center'><RiRadioButtonFill className='pr-1'/>Tailwind</p>
-                            <p className='text-gray-600 py-2 flex items-center'><RiRadioButtonFill className='pr-1'/>Javascript</p>
-                            <p className='text-gray-600 py-2 flex items-center'><RiRadioButtonFill className='pr-1'/>Firebase</p>
-                            <p className='text-gray-600 py-2 flex items-center'><RiRadioButtonFill className='pr-1'/>Google API</p>
-                            <p className='text-gray-600 py-2 flex items-center'><RiRadioButtonFill className='pr-1'/>Zillow API</p>
+                            <p className='text-gray-600 py-2 flex items-center'><RiRadioButtonFill className='pr-1'/>Python</p>
+                            <p className='text-gray-600 py-2 flex items-center'><RiRadioButtonFill className='pr-1'/>Pygame</p>
+                            <p className='text-gray-600 py-2 flex items-center'><RiRadioButtonFill className='pr-1'/>Pygbag</p>
+                            <p className='text-gray-600 py-2 flex items-center'><RiRadioButtonFill className='pr-1'/>HTML</p>
                         </div>
                     </div>
                 </div>
