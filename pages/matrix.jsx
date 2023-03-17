@@ -27,7 +27,7 @@ const matrix = () => {
                         Used Python along with the Pygame module to create a matrix rain effect. Columns of characters from the Katakana alphabet 
                         generate randomly and &quot;rain&quot; down the screen. Used Pygbag to convert the Pygame window into a hostable webpage.
                     </p>
-                    <a href="https://matrix-screensaver.vercel.app/" target='_blank' rel='noreferrer'><button className='px-8 py-2 mt-4 mr-4 sm:mr-8'>View Project</button></a>
+                    <a href="https://matrix.ldcurdi.com/" target='_blank' rel='noreferrer'><button className='px-8 py-2 mt-4 mr-4 sm:mr-8'>View Project</button></a>
                     <a href="https://github.com/LeoCurdi/matrixScreensaver" target='_blank' rel='noreferrer'><button className='px-8 py-2 mt-4'>View Code</button></a>
                 </div>
                 <div className='col-span-4 md:col-span-1 shadow-xl shadow-gray-400 rounded-xl p-4'>

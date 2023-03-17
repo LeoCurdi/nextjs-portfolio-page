@@ -26,7 +26,7 @@ const physics = () => {
                     <p className='pt-1'>
                         *Add description here*
                     </p>
-                    <a href="https://physics-simulator-one.vercel.app/" target='_blank' rel='noreferrer'><button className='px-8 py-2 mt-4 mr-4 sm:mr-8'>View Project</button></a>
+                    <a href="https://physics.ldcurdi.com/" target='_blank' rel='noreferrer'><button className='px-8 py-2 mt-4 mr-4 sm:mr-8'>View Project</button></a>
                     <a href="https://github.com/LeoCurdi/physicsSimulator" target='_blank' rel='noreferrer'><button className='px-8 py-2 mt-4'>View Code</button></a>
                 </div>
                 <div className='col-span-4 md:col-span-1 shadow-xl shadow-gray-400 rounded-xl p-4'>
