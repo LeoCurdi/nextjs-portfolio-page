@@ -25,8 +25,8 @@ const sortingVisualizer = () => {
                     <h2>Overview</h2>
                     <p className='py-1'>Leveraged Javascript, HTML, and CSS to visualize various sorting algorithms so that I could understand them better.</p>
                     <p className='py-1'>
-                        An array is randomly generated and displayed on the screen as a series of vertical bars. Each step of the selected 
-                        algorithm can be seen from start to finish by color changing and moving bars. The user can adjust the size of the array 
+                        An array of integers is randomly generated and displayed on the screen as a series of vertical bars. Each step of the selected 
+                        algorithm can be seen from start to finish through color changing and moving bars. The user can adjust the size of the array 
                         and speed of the algorithm being visualized.
                     </p>
                     <p className='pt-1'>Included algorithms: bubble, selection, insertion, quick, merge, heap.</p>
