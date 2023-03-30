@@ -18,6 +18,46 @@ const Navbar = () => {
     const router = useRouter()
     const onMain = (router.asPath === '/' || router.asPath === '/#about' || router.asPath === '/#skills' || router.asPath === '/#projects' || router.asPath === '/#contact')
     
+
+// stuff for highlighting nav links when scrolling down
+    function trackSection(id) {
+        // grab the section and the nav link
+        const section = document.getElementById(id);
+        const link = document.getElementById(`${id}Link`);
+        
+        // bail if something == null, because otherwise you will try to modify a null variable and get an error
+        if (!section || !link) return;
+
+        // if we're at top of page and havent done any scrolling yet (initial page load) highlight the home link
+        if (id === 'home' && window.pageYOffset < screen.height / 3) {
+            link.classList.add('activeNavLink');
+        }
+
+        // now listen and highlight the appropriate links based on scroll position
+        window.addEventListener('scroll', () => {
+            const currentPos = window.scrollY + (screen.height / 3);
+            const top = section.offsetTop;
+            const bottom = top + section.offsetHeight;
+        
+            if (currentPos >= top && currentPos <= bottom) {
+                link.classList.add('activeNavLink');
+            } 
+            else {
+                link.classList.remove('activeNavLink');
+            }
+        });
+    }
+    
+    // only run this when window is defined, otherwise document = null and the code inside trackSection will break
+    if (typeof window !== 'undefined') {
+        trackSection('home');
+        trackSection('about');
+        trackSection('skills');
+        trackSection('projects');
+        trackSection('contact');
+    }
+
+
     useEffect(() => {
         if (!onMain) {
             // if we're on a project page. we still want the nav bar to be opaque if the user scrolls down a project page
@@ -69,41 +109,35 @@ const Navbar = () => {
                 <div>
                     <ul style={{color: `${linkColor}`}} className='hidden md:flex'> {/* tailwind is mobile first, so this is saying: hide nav items on mobile, and display them as flex on anything above medium screen size */}
                         <Link href='/'>
-                            <div className='px-5 2xl:px-6 py-2  hover:rounded-xl hover:uppercase hover:bg-gradient-to-r hover:from-[#5651e5] hover:to-[#709dff] hover:text-white'>
+                            <div id='homeLink' className='px-5 2xl:px-6 py-2  hover:rounded-xl hover:uppercase hover:bg-gradient-to-r hover:from-[#5651e5] hover:to-[#709dff] hover:text-white'>
                                 <li className='text-sm uppercase'>Home</li>
                             </div>
-                            {/* <li className='ml-10 text-sm uppercase hover:border-b hover:mt-[-.05rem]'>Home</li> */}
                         </Link>
                         <Link href='/#about'>
-                            <div className='px-5 2xl:px-6 py-2   hover:rounded-xl hover:uppercase hover:bg-gradient-to-r hover:from-[#5651e5] hover:to-[#709dff] hover:text-white'>
+                            <div id='aboutLink' className='px-5 2xl:px-6 py-2   hover:rounded-xl hover:uppercase hover:bg-gradient-to-r hover:from-[#5651e5] hover:to-[#709dff] hover:text-white'>
                                 <li className='text-sm uppercase'>About</li>
                             </div>
-                            {/* <li className='ml-10 text-sm uppercase hover:border-b hover:mt-[-.05rem]'>About</li> */}
                         </Link>
                         <Link href='/#skills'>
-                            <div className='px-5 2xl:px-6 py-2  hover:rounded-xl hover:uppercase hover:bg-gradient-to-r hover:from-[#5651e5] hover:to-[#709dff] hover:text-white'>
+                            <div id='skillsLink' className='px-5 2xl:px-6 py-2  hover:rounded-xl hover:uppercase hover:bg-gradient-to-r hover:from-[#5651e5] hover:to-[#709dff] hover:text-white'>
                                 <li className='text-sm uppercase'>Skills</li>
                             </div>
-                            {/* <li className='ml-10 text-sm uppercase hover:border-b hover:mt-[-.05rem]'>Skills</li> */}
                         </Link>
                         <Link href='/#projects'>
-                            <div className='px-5 2xl:px-6 py-2  hover:rounded-xl hover:uppercase hover:bg-gradient-to-r hover:from-[#5651e5] hover:to-[#709dff] hover:text-white'>
+                            <div id='projectsLink' className='px-5 2xl:px-6 py-2  hover:rounded-xl hover:uppercase hover:bg-gradient-to-r hover:from-[#5651e5] hover:to-[#709dff] hover:text-white'>
                                 <li className='text-sm uppercase'>Projects</li>
                             </div>
-                            {/* <li className='ml-10 text-sm uppercase hover:border-b hover:mt-[-.05rem]'>Projects</li> */}
+                        </Link>
+                        <Link href='/#contact'>
+                            <div id='contactLink' className='px-5 2xl:px-6 py-2  hover:rounded-xl hover:uppercase hover:bg-gradient-to-r hover:from-[#5651e5] hover:to-[#709dff] hover:text-white'>
+                                <li className='text-sm uppercase'>Contact</li>
+                            </div>
                         </Link>
                         <Link href='/assets/Resume.pdf' target='_blank'>
                             <div className='px-5 2xl:px-6 py-2   hover:rounded-xl hover:uppercase hover:bg-gradient-to-r hover:from-[#5651e5] hover:to-[#709dff] hover:text-white'>
                                 <li className='text-sm uppercase'>Resume</li>
                             </div>
-                            {/* <li className='ml-10 text-sm uppercase hover:border-b hover:mt-[-.05rem]'>Projects</li> */}
                         </Link>
-                        <Link href='/#contact'>
-                            <div className='px-5 2xl:px-6 py-2  hover:rounded-xl hover:uppercase hover:bg-gradient-to-r hover:from-[#5651e5] hover:to-[#709dff] hover:text-white'>
-                                <li className='text-sm uppercase'>Contact</li>
-                            </div>
-                            {/* <li className='ml-10 text-sm uppercase hover:border-b hover:mt-[-.05rem]'>Contact</li> */}
-                        </Link>   
                     </ul>
                     <div onClick={handleNav} style={{color: `${hamburgerIconColor}`}} className='md:hidden'>
                         <AiOutlineMenu size={25} className='cursor-pointer' />
