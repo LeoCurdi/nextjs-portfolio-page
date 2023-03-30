@@ -28,7 +28,7 @@ const cosmicClash = () => {
                         which explode on impact, collects ammo, and tries not to get hit by the enemies. The randomly generated enemies are 
                         aware of and target the player.
                     </p>
-                    <a href="https://cosmicclash.ldcurdi.com/" target='_blank' rel='noreferrer'><button className='px-8 py-2 mt-4 mr-4 sm:mr-8'>View Project</button></a>
+                    <a href="https://cosmicclash.ldcurdi.com/" target='_blank' rel='noreferrer'><button className='px-8 py-2 mt-4 mr-4 sm:mr-8'>View Demo</button></a>
                     <a href="https://github.com/LeoCurdi/cosmicClash" target='_blank' rel='noreferrer'><button className='px-8 py-2 mt-4'>View Code</button></a>
                 </div>
                 <div className='col-span-4 md:col-span-1 shadow-xl shadow-gray-400 rounded-xl p-4'>

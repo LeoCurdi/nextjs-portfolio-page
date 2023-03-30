@@ -30,7 +30,7 @@ const sortingVisualizer = () => {
                         and speed of the algorithm being visualized.
                     </p>
                     <p className='pt-1'>Included algorithms: bubble, selection, insertion, quick, merge, heap.</p>
-                    <a href="https://sortingvisualizer.ldcurdi.com/" target='_blank' rel='noreferrer'><button className='px-8 py-2 mt-4 mr-4 sm:mr-8'>View Project</button></a>
+                    <a href="https://sortingvisualizer.ldcurdi.com/" target='_blank' rel='noreferrer'><button className='px-8 py-2 mt-4 mr-4 sm:mr-8'>View Demo</button></a>
                     <a href="https://github.com/LeoCurdi/sortingVisualizer" target='_blank' rel='noreferrer'><button className='px-8 py-2 mt-4'>View Code</button></a>
                 </div>
                 <div className='col-span-4 md:col-span-1 shadow-xl shadow-gray-400 rounded-xl p-4'>
