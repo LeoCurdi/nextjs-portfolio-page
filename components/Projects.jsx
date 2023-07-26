@@ -26,7 +26,7 @@ const Projects = () => {
                     <ProjectItem title='Cosmic Clash' backgroundImg={cosmicClashImg} projectUrl='/cosmicClash' tech='Javascript' />
                     <ProjectItem title='Matrix Screensaver' backgroundImg={matrixImg} projectUrl='/matrix' tech='Python' />
                     <ProjectItem title='Nasa Photo of the Day' backgroundImg={nasaImg} projectUrl='/nasa' tech='Javascript' />
-                    <ProjectItem title='Physics Simulator' backgroundImg={physicsImg} projectUrl='/physics' tech='Matter JS' />
+                    {/* <ProjectItem title='Physics Simulator' backgroundImg={physicsImg} projectUrl='/physics' tech='Matter JS' /> */}
                     <ProjectItem title='Math Visualizations' backgroundImg={mathImg} projectUrl='/math' tech='Javascript' />
                 </div>
             </div>

@@ -24,17 +24,17 @@ const cosmicClash = () => {
                     {/* <p>Project</p> */}
                     <h2>Overview</h2>
                     <p className='pt-1'>
-                        YelpSki is a full stack web application developed as part of Colt Steele&apos;s web developer course on Udemy. It allows ski enthusiasts to register, 
+                        YelpSki is a full-stack web application developed as part of Colt Steele&apos;s web developer course on Udemy. It allows ski enthusiasts to register, 
                         post ski resorts, and leave reviews. Users can explore resort locations on an interactive cluster map powered by Mapbox API. 
                         Overall, YelpSki provides a user-friendly, secure, and visually appealing platform for ski enthusiasts to connect and share their experiences.
                     </p>
                     <p className='pt-1'> 
-                        The backend is built with NodeJS, Express, and MongoDB, allowing persistent data storage and encrypted user information.
+                        The back-end is built with NodeJS, Express, and MongoDB, allowing persistent data storage and encrypted user information.
                         Key features include authentication with Passport, full CRUD functionality, error handling, input validation, and file uploads with Cloudinary. 
                         Authorization is set up such that contributions to the site are linked to user accounts and thus can only be modified by the author.
                         Additionally, the application implements various cybersecurity strategies like injection and input sanitization.
                     </p>
-                    <a href="https://yelpcamp-x81j.onrender.com" target='_blank' rel='noreferrer'><button className='px-8 py-2 mt-4 mr-4 sm:mr-8'>View Demo</button></a>
+                    <a href="https://yelpski.ldcurdi.com" target='_blank' rel='noreferrer'><button className='px-8 py-2 mt-4 mr-4 sm:mr-8'>View Demo</button></a>
                     <a href="https://github.com/LeoCurdi/yelpSki" target='_blank' rel='noreferrer'><button className='px-8 py-2 mt-4'>View Code</button></a>
                 </div>
                 <div className='col-span-4 md:col-span-1 shadow-xl shadow-gray-400 rounded-xl p-4'>
