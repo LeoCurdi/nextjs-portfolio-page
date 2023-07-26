@@ -1,5 +1,6 @@
 import Image from 'next/image'
 import React, {useState} from 'react'
+import yelpSkiImg from '../public/assets/project-images/yelpSki1 - copy.png'
 import sortingVisualizerImg from '../public/assets/project-images/sortingVisualizer.png'
 import cosmicClashImg from '../public/assets/project-images/cosmicClash.png'
 import matrixImg from '../public/assets/project-images/matrix.png'
@@ -20,6 +21,7 @@ const Projects = () => {
                 <p className='text-xl tracking-widest uppercase text-[#5651e5]'>Projects</p>
                 <h2 className='py-4'>What I&apos;ve Built</h2>
                 <div className='grid sm:grid-cols-2 lg:grid-cols-3 gap-8'>
+                    <ProjectItem title='YelpSki' backgroundImg={yelpSkiImg} projectUrl='/yelpSki' tech='NodeJS' />
                     <ProjectItem title='Sorting Visualizer' backgroundImg={sortingVisualizerImg} projectUrl='/sortingVisualizer' tech='Javascript' />
                     <ProjectItem title='Cosmic Clash' backgroundImg={cosmicClashImg} projectUrl='/cosmicClash' tech='Javascript' />
                     <ProjectItem title='Matrix Screensaver' backgroundImg={matrixImg} projectUrl='/matrix' tech='Python' />

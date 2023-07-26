@@ -1,0 +1,5 @@
+
+- after cloning from github:
+	- 'npm install' // install all dependencies for the project
+	- 'npm run dev' // start up the server
+	- server is running on localhost 3000
