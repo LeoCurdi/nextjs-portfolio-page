@@ -1,6 +1,6 @@
 import Image from 'next/image'
 import React, {useState} from 'react'
-import yelpSkiImg from '../public/assets/project-images/yelpSki1-copy.png'
+import yelpSkiImg from '../public/assets/project-images/yelpSki1-Copy.png'
 import sortingVisualizerImg from '../public/assets/project-images/sortingVisualizer.png'
 import cosmicClashImg from '../public/assets/project-images/cosmicClash.png'
 import matrixImg from '../public/assets/project-images/matrix.png'
