@@ -14,6 +14,8 @@ import tailwindImg from '../public/assets/skill-icons/tailwind.png'
 import firebaseImg from '../public/assets/skill-icons/firebase.png'
 import nextImg from '../public/assets/skill-icons/nextjs.png'
 import nodeImg from '../public/assets/skill-icons/node.png'
+import mongoImg from '../public/assets/skill-icons/mongo.png'
+import expressImg from '../public/assets/skill-icons/express.png'
 import gitImg from '../public/assets/skill-icons/git.png'
 import cImg from '../public/assets/skill-icons/c.png'
 import cppImg from '../public/assets/skill-icons/cpp.png'
@@ -28,14 +30,18 @@ const Skills = () => {
                 <h2 className='py-4'>What I Can Do</h2>
                 <div className='grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3 md:gap-6'>
                     
-                    <SkillItem name='HTML' backgroundImg={htmlImg} />
-                    <SkillItem name='CSS' backgroundImg={cssImg} />
+                    {/* <SkillItem name='HTML' backgroundImg={htmlImg} />
+                    <SkillItem name='CSS' backgroundImg={cssImg} /> */}
                     <SkillItem name='JavaScript' backgroundImg={jsImg} />
-                    <SkillItem name='React' backgroundImg={reactImg} />
+                    <SkillItem name='ReactJS' backgroundImg={reactImg} />
+                    <SkillItem name='NextJS' backgroundImg={nextImg} />
                     <SkillItem name='Tailwind' backgroundImg={tailwindImg} />
+
+                    <SkillItem name='NodeJS' backgroundImg={nodeImg} />
+                    <SkillItem name='MongoDB' backgroundImg={mongoImg} />
+                    <SkillItem name='ExpressJS' backgroundImg={expressImg} />
                     <SkillItem name='Firebase' backgroundImg={firebaseImg} />
-                    <SkillItem name='Next' backgroundImg={nextImg} />
-                    <SkillItem name='Node' backgroundImg={nodeImg} />
+
                     <SkillItem name='Git' backgroundImg={gitImg} />
                     <SkillItem name='C' backgroundImg={cImg} />
                     <SkillItem name='C++' backgroundImg={cppImg} />
