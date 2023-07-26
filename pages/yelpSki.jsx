@@ -24,7 +24,7 @@ const cosmicClash = () => {
                     {/* <p>Project</p> */}
                     <h2>Overview</h2>
                     <p className='pt-1'>
-                        YelpSki is a full stack web application developed as part of Colt Steele's web developer course on Udemy. It allows ski enthusiasts to register, 
+                        YelpSki is a full stack web application developed as part of Colt Steele&apos;s web developer course on Udemy. It allows ski enthusiasts to register, 
                         post ski resorts, and leave reviews. Users can explore resort locations on an interactive cluster map powered by Mapbox API. 
                         Overall, YelpSki provides a user-friendly, secure, and visually appealing platform for ski enthusiasts to connect and share their experiences.
                     </p>
