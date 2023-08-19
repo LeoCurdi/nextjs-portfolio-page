@@ -34,7 +34,8 @@ const cosmicClash = () => {
                         Authorization is set up such that contributions to the site are linked to user accounts and thus can only be modified by the author.
                         Additionally, the application implements various cybersecurity strategies like injection and input sanitization.
                     </p>
-                    <a href="https://yelpski.ldcurdi.com" target='_blank' rel='noreferrer'><button className='px-8 py-2 mt-4 mr-4 sm:mr-8'>View Demo</button></a>
+                    <a href="https://yelpski.ldcurdi.com" target='_blank' rel='noreferrer'><button className='px-8 py-2 mt-4 mr-4 sm:mr-8'>View Site</button></a>
+                    <a href="https://www.youtube.com/watch?v=TNpaTQMBQoE" target='_blank' rel='noreferrer'><button className='px-8 py-2 mt-4 mr-4 sm:mr-8'>View Demo Video</button></a>
                     <a href="https://github.com/LeoCurdi/yelpSki" target='_blank' rel='noreferrer'><button className='px-8 py-2 mt-4'>View Code</button></a>
                 </div>
                 <div className='col-span-4 md:col-span-1 shadow-xl shadow-gray-400 rounded-xl p-4'>
