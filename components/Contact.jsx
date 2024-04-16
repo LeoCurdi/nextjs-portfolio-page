@@ -94,13 +94,13 @@ const Contact = () => {
                         </div>
                     </div>
                 </div>
-                <div className='flex justify-center py-12'>
+                {/* <div className='flex justify-center py-12'>
                     <Link href='/'>
                         <div className='rounded-full shadow-lg shadow-gray-400 p-4 cursor-pointer hover:scale-110 ease-in duration-200'>
-                            <HiOutlineChevronDoubleUp className='text-[#5651e5]' size={30} /> {/* using size property of react icons */}
+                            <HiOutlineChevronDoubleUp className='text-[#5651e5]' size={30} /> using size property of react icons
                         </div>
                     </Link>
-                </div>
+                </div> */}
             </div>
         </div>
     );

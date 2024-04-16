@@ -128,11 +128,11 @@ const Navbar = () => {
                                 <li className='text-sm uppercase'>Projects</li>
                             </div>
                         </Link>
-                        <Link href='/#contact'>
+                        {/* <Link href='/#contact'>
                             <div id='contactLink' className='px-5 2xl:px-6 py-2  hover:rounded-xl hover:uppercase hover:bg-gradient-to-r hover:from-[#5651e5] hover:to-[#709dff] hover:text-white'>
                                 <li className='text-sm uppercase'>Contact</li>
                             </div>
-                        </Link>
+                        </Link> */}
                         <Link href='/assets/Resume.pdf' target='_blank'>
                             <div className='px-5 2xl:px-6 py-2   hover:rounded-xl hover:uppercase hover:bg-gradient-to-r hover:from-[#5651e5] hover:to-[#709dff] hover:text-white'>
                                 <li className='text-sm uppercase'>Resume</li>
@@ -177,9 +177,9 @@ const Navbar = () => {
                             <Link href='/assets/Resume.pdf'>
                                 <li onClick={handleNav} className='py-4 text-sm'>Resume</li>
                             </Link>
-                            <Link href='/#contact'>
+                            {/* <Link href='/#contact'>
                                 <li onClick={handleNav} className='py-4 text-sm'>Contact</li>
-                            </Link>  
+                            </Link>   */}
                         </ul>
                         <div className='pt-8'>
                             <p className='uppercase tracking-widest text-[#5651e5]'>Let&apos;s Connect</p>
