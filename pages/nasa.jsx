@@ -24,11 +24,10 @@ const nasa = () => {
                     {/* <p>Project</p> */}
                     <h2>Overview</h2>
                     <p className='pt-1'>
-                        Leveraged NASA's API to implement a web application for the astronomy picture of the day.
+                        {"Leveraged NASA's API to implement a web application for the astronomy picture of the day."}
                     </p>
                     <p className='pt-1'>
-                        Integrated an API key to fetch data wirelessly from NASA servers and display contents to the 
-                        application using Python and Flask to encourage learning about the cosmos.
+                        {"Integrated an API key to fetch data wirelessly from NASA servers and display contents to the application using Python and Flask to encourage learning about the cosmos."}
                     </p>
                     <a href="https://nasaapi.ldcurdi.com/" target='_blank' rel='noreferrer'><button className='px-8 py-2 mt-4 mr-4 sm:mr-8'>View Demo</button></a>
                     <a href="https://github.com/LeoCurdi/NasaPhotoOfTheDay" target='_blank' rel='noreferrer'><button className='px-8 py-2 mt-4'>View Code</button></a>
