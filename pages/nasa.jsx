@@ -24,7 +24,11 @@ const nasa = () => {
                     {/* <p>Project</p> */}
                     <h2>Overview</h2>
                     <p className='pt-1'>
-                        *Add description here*
+                        Leveraged NASA's API to implement a web application for the astronomy picture of the day.
+                    </p>
+                    <p className='pt-1'>
+                        Integrated an API key to fetch data wirelessly from NASA servers and display contents to the 
+                        application using Python and Flask to encourage learning about the cosmos.
                     </p>
                     <a href="https://nasaapi.ldcurdi.com/" target='_blank' rel='noreferrer'><button className='px-8 py-2 mt-4 mr-4 sm:mr-8'>View Demo</button></a>
                     <a href="https://github.com/LeoCurdi/NasaPhotoOfTheDay" target='_blank' rel='noreferrer'><button className='px-8 py-2 mt-4'>View Code</button></a>
@@ -33,10 +37,11 @@ const nasa = () => {
                     <div className='p-2'>
                         <p className='text-center font-bold pb-2'>Technologies</p>
                         <div className='grid grid-cols-3 md:grid-cols-1'>
+                            <p className='text-gray-600 py-2 flex items-center'><RiRadioButtonFill className='pr-1'/>Python</p>
+                            <p className='text-gray-600 py-2 flex items-center'><RiRadioButtonFill className='pr-1'/>Flask</p>
+                            <p className='text-gray-600 py-2 flex items-center'><RiRadioButtonFill className='pr-1'/>NASA API</p>
                             <p className='text-gray-600 py-2 flex items-center'><RiRadioButtonFill className='pr-1'/>HTML</p>
                             <p className='text-gray-600 py-2 flex items-center'><RiRadioButtonFill className='pr-1'/>CSS</p>
-                            <p className='text-gray-600 py-2 flex items-center'><RiRadioButtonFill className='pr-1'/>Javascript</p>
-                            <p className='text-gray-600 py-2 flex items-center'><RiRadioButtonFill className='pr-1'/>NASA API</p>
                         </div>
                     </div>
                 </div>
