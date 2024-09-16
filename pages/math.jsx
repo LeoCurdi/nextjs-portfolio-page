@@ -24,7 +24,7 @@ const math = () => {
                     {/* <p>Project</p> */}
                     <h2>Overview</h2>
                     <p className='pt-1'>
-                        *{"A collection of math concepts that I wanted to understand better through visualization demos."}
+                        {"A collection of math concepts that I wanted to understand better through visualization demos."}
                     </p>
                     <a href="https://math.ldcurdi.com/" target='_blank' rel='noreferrer'><button className='px-8 py-2 mt-4 mr-4 sm:mr-8'>View Demo</button></a>
                     <a href="https://github.com/LeoCurdi/mathVisualizations" target='_blank' rel='noreferrer'><button className='px-8 py-2 mt-4'>View Code</button></a>
