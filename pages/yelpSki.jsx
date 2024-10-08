@@ -2,9 +2,6 @@ import Image from 'next/image'
 import React, {useState} from 'react'
 import yelpSkiImg from '../public/assets/project-images/yelpSki6.png'
 import Link from 'next/link'
-import {AiOutlineClose, AiOutlineMenu, AiOutlineMail} from 'react-icons/ai'
-import {FaGithub, FaLinkedinIn} from 'react-icons/fa'
-import {BsFillPersonLinesFill} from 'react-icons/bs'
 import {RiRadioButtonFill} from 'react-icons/ri'
 
 const cosmicClash = () => {
