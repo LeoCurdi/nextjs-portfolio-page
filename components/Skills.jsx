@@ -20,6 +20,8 @@ import gitImg from '../public/assets/skill-icons/git.png'
 import cImg from '../public/assets/skill-icons/c.png'
 import cppImg from '../public/assets/skill-icons/cpp.png'
 import pythonImg from '../public/assets/skill-icons/python.png'
+import csharpImg from '../public/assets/skill-icons/csharp.png'
+import winformsImg from '../public/assets/skill-icons/winforms.png'
 
 
 const Skills = () => {
@@ -30,23 +32,25 @@ const Skills = () => {
                 <h2 className='py-4'>What I Can Do</h2>
                 <div className='grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3 md:gap-6'>
                     
-                    {/* <SkillItem name='HTML' backgroundImg={htmlImg} />
-                    <SkillItem name='CSS' backgroundImg={cssImg} /> */}
+                    <SkillItem name='C#' backgroundImg={csharpImg} />
                     <SkillItem name='JavaScript' backgroundImg={jsImg} />
+                    <SkillItem name='Python' backgroundImg={pythonImg} />
+                    <SkillItem name='C/C++' backgroundImg={cppImg} />
+
+                    <SkillItem name='WinForms' backgroundImg={winformsImg} />
                     <SkillItem name='ReactJS' backgroundImg={reactImg} />
                     <SkillItem name='NextJS' backgroundImg={nextImg} />
                     <SkillItem name='Tailwind' backgroundImg={tailwindImg} />
 
-                    <SkillItem name='NodeJS' backgroundImg={nodeImg} />
-                    <SkillItem name='MongoDB' backgroundImg={mongoImg} />
-                    <SkillItem name='ExpressJS' backgroundImg={expressImg} />
-                    <SkillItem name='Firebase' backgroundImg={firebaseImg} />
-
                     <SkillItem name='Git' backgroundImg={gitImg} />
-                    <SkillItem name='C' backgroundImg={cImg} />
-                    <SkillItem name='C++' backgroundImg={cppImg} />
-                    <SkillItem name='Python' backgroundImg={pythonImg} />
-
+                    <SkillItem name='MongoDB' backgroundImg={mongoImg} />
+                    <SkillItem name='NodeJS' backgroundImg={nodeImg} />
+                    <SkillItem name='ExpressJS' backgroundImg={expressImg} />
+                    
+                    {/* <SkillItem name='HTML' backgroundImg={htmlImg} />
+                    <SkillItem name='CSS' backgroundImg={cssImg} />
+                    <SkillItem name='Firebase' backgroundImg={firebaseImg} />
+                    <SkillItem name='C' backgroundImg={cImg} /> */}
                 </div>
             </div>
         </div>
